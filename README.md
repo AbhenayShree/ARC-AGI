@@ -1,4 +1,4 @@
-ARC General Intelligence Solver (ARC-AGI)
+Abstraction & Reasoning Corpus for Artificial General Intelligence (ARC-AGI)
 
 This repository offers access to the ARC-AGI task data along with a browser-based interface for users to engage with the tasks directly.
 "ARC can be seen as a benchmark for general artificial intelligence, a program synthesis challenge, or a psychometric intelligence test. It targets both humans and AI systems aiming to emulate human-like general fluid intelligence."
