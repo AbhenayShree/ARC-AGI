@@ -1,15 +1,14 @@
-<<<<<<< HEAD
-Artificial General Intelligence (ARC-AGI)
-This repository includes the ARC-AGI task data and a browser-based interface for users to engage with the tasks manually.
+ARC General Intelligence Solver (ARC-AGI)
 
-"ARC can be seen as a general artificial intelligence benchmark, a program synthesis benchmark, or a psychometric intelligence test. It targets both humans and AI systems aiming to emulate a human-like form of general fluid intelligence."
+This repository offers access to the ARC-AGI task data along with a browser-based interface for users to engage with the tasks directly.
+"ARC can be seen as a benchmark for general artificial intelligence, a program synthesis challenge, or a psychometric intelligence test. It targets both humans and AI systems aiming to emulate human-like general fluid intelligence."
 
 A complete description of the dataset, its goals, and its underlying logic, can be found in: [On the Measure of Intelligence](https://arxiv.org/abs/1911.01547).
 
 As a reminder, a test-taker is said to solve a task when, upon seeing the task for the first time, they are able to produce the correct output grid for *all* test inputs in the task (this includes picking the dimensions of the output grid). For each test input, the test-taker is allowed 3 trials (this holds for all test-takers, either humans or AI).
 
 
-## Task file format
+1)Task file format
 
 The `data` directory contains two subdirectories:
 
@@ -31,7 +30,7 @@ A "grid" is a rectangular matrix (list of lists) of integers between 0 and 9 (in
 When looking at a task, a test-taker has access to inputs & outputs of the demonstration pairs, plus the input(s) of the test pair(s). The goal is to construct the output grid(s) corresponding to the test input grid(s), using 3 trials for each test input. "Constructing the output grid" involves picking the height and width of the output grid, then filling each cell in the grid with a symbol (integer between 0 and 9, which are visualized as colors). Only *exact* solutions (all cells match the expected answer) can be said to be correct.
 
 
-## Usage of the testing interface
+2)Usage of the testing interface
 
 The testing interface is located at `apps/testing_interface.html`. Open it in a web browser (Chrome recommended). It will prompt you to select a task JSON file.
 
@@ -43,13 +42,13 @@ On the left, you will see the input/output pairs demonstrating the nature of the
 
 You have access to the following tools:
 
-### Grid controls
+3)Grid controls
 
 - Resize: input a grid size (e.g. "10x20" or "4x4") and click "Resize". This preserves existing grid content (in the top left corner).
 - Copy from input: copy the input grid to the output grid. This is useful for tasks where the output consists of some modification of the input.
 - Reset grid: fill the grid with 0s.
 
-### Symbol controls
+4)Symbol controls
 
 - Edit: select a color (symbol) from the color picking bar, then click on a cell to set its color.
 - Select: click and drag on either the output grid or the input grid to select cells.
@@ -57,13 +56,20 @@ You have access to the following tools:
     - After selecting cells on either the input grid or the output grid, you can press C to copy their content. After copying, you can select a cell on the output grid and press "V" to paste the copied content. You should select the cell in the top left corner of the zone you want to paste into.
 - Floodfill: click on a cell from the output grid to color all connected cells to the selected color. "Connected cells" are contiguous cells with the same color.
 
-### Answer validation
+5)Answer Validation
+Once your output grid is prepared, click the green "Submit!" button to validate your answer. There are no restrictions on the number of attempts.
 
-When your output grid is ready, click the green "Submit!" button to check your answer. We do not enforce the 3-trials rule.
+After successfully solving a task, you can proceed to the next test input grid by clicking the "Next test input" button. To start a new task, use the "Load task" button.
 
-After you've obtained the correct answer for the current test input grid, you can switch to the next test input grid for the task using the "Next test input" button (if there is any available; most tasks only have one test input).
+Explore and enhance your problem-solving skills through the ARC-AGI tasks!
 
-When you're done with a task, use the "load task" button to open a new task.
-=======
-# ARC-GENERAL-INTELLIGENCE-SOLVER
->>>>>>> fcd2f3ab485d28d60ca47b0dad32ab3d7cba5c31
+
+
+
+
+
+
+
+
+
+
